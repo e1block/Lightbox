@@ -12,7 +12,7 @@ protocol PageViewDelegate: AnyObject {
 
 open class PageView: UIScrollView {
 
-  lazy var imageView: SDAnimatedImageView = {
+  open lazy var imageView: SDAnimatedImageView = {
     let imageView = SDAnimatedImageView()
     imageView.contentMode = .scaleAspectFit
     imageView.clipsToBounds = true
